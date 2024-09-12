@@ -43,7 +43,7 @@ cd flask-image-upload-app
 pip install Flask
 ```
 
-# Set you ip 
+# Copy your ip address
 ```
 ipconfig 
 ``` 
