@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Subir Imagen</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>¡Bienvenido a mi página web!</h1>
-    <p>Esta es una página web simple usando Flask.</p>
+    <h1>Subir Imagen</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Selecciona una imagen:</label>
+        <input type="file" name="file" id="file">
+        <input type="submit" value="Subir Imagen">
+    </form>
 </body>
 </html>
