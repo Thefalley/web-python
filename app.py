@@ -49,5 +49,5 @@ def uploaded_file(filename):
     return redirect(url_for('static', filename=f'uploads/{filename}'))
 
 if __name__ == '__main__':
-    app.run(debug=True, host='192.168.1.220') ## http://192.168.1.146:5000/
+    app.run(debug=True, host='192.168.1.33') ## http://192.168.1.146:5000/
 
